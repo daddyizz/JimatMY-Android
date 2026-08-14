@@ -34,7 +34,7 @@
 
 - [ ] Nama: JimatMY.
 - [ ] Ikon 512 × 512 PNG.
-- [ ] Feature graphic 1024 × 500 JPG/PNG.
+- [x] Feature graphic 1024 × 500, PNG 24-bit tanpa alpha.
 - [ ] Minimum dua screenshot telefon yang bersih.
 - [ ] Short description maksimum 80 aksara.
 - [ ] Full description menerangkan alat perbandingan, laporan harga, Saved Deals dan panduan.
