@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F9F6"/>
+      <stop offset="1" stop-color="#E3F5EC"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#006B49" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="500" fill="url(#bg)"/>
+  <circle cx="935" cy="70" r="180" fill="#C8EDDD"/>
+  <circle cx="885" cy="450" r="230" fill="#DDF4EA"/>
+  <g filter="url(#shadow)">
+    <rect x="84" y="92" width="316" height="316" rx="78" fill="#00A06A"/>
+    <path d="M235 184h48v126c0 52-26 79-79 79h-16v-47h12c25 0 35-11 35-37z" fill="#FFFFFF"/>
+  </g>
+  <text x="470" y="205" font-family="DejaVu Sans, Arial, sans-serif" font-size="78" font-weight="700" fill="#142132">Jimat<tspan fill="#00A06A">MY</tspan></text>
+  <text x="472" y="274" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#142132">Beli Bijak. Jimat Lebih.</text>
+  <text x="472" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" fill="#4E5D69">Banding harga • Simpan deal • Beli berbaloi</text>
+</svg>

@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.daddyizz.jimatmy'
+    compileSdkVersion 36
+
+    defaultConfig {
+        applicationId 'com.daddyizz.jimatmy'
+        minSdkVersion 23
+        targetSdkVersion 36
+        versionCode 4
+        versionName '1.2.0'
+
+        resValue 'string', 'app_name', 'JimatMY'
+        resValue 'string', 'start_url', 'https://jimatmy.lovable.app/?source=android'
+    }
+
+    buildTypes {
+        debug {
+            // Use the real App ID so UMP can load JimatMY privacy messages.
+            // The banner remains Google's dedicated test unit.
+            resValue 'string', 'admob_app_id', 'ca-app-pub-4110950503958596~6519592683'
+            resValue 'string', 'banner_ad_unit_id', 'ca-app-pub-3940256099942544/9214589741'
+        }
+        release {
+            // JimatMY production App ID and banner unit.
+            resValue 'string', 'admob_app_id', 'ca-app-pub-4110950503958596~6519592683'
+            resValue 'string', 'banner_ad_unit_id', 'ca-app-pub-4110950503958596/1134620240'
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        abortOnError true
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-ads:25.4.0'
+    implementation 'com.google.android.ump:user-messaging-platform:4.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+}

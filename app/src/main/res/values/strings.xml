@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_file_picker">Tiada aplikasi pemilih fail ditemui.</string>
+    <string name="no_app_for_link">Tiada aplikasi yang boleh membuka pautan ini.</string>
+    <string name="opening_admin">Membuka dashboard Admin…</string>
+    <string name="offline_title">Tiada sambungan internet</string>
+    <string name="offline_message">Semak Wi-Fi atau data mudah alih, kemudian cuba lagi.</string>
+    <string name="retry">Cuba Lagi</string>
+    <string name="refresh">Muat semula</string>
+    <string name="share">Kongsi</string>
+    <string name="menu">Menu</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="ad_privacy">Tetapan Privasi Iklan</string>
+    <string name="open_browser">Buka dalam browser</string>
+    <string name="about_app">Tentang aplikasi</string>
+    <string name="share_with">Kongsi melalui</string>
+    <string name="share_text">Lihat halaman ini di JimatMY:</string>
+    <string name="about_message">JimatMY membantu pengguna Malaysia membandingkan pilihan, menyemak harga dan menggunakan alat membeli-belah dengan lebih bijak.\n\nVersi %1$s</string>
+    <string name="privacy_not_required">Tetapan tambahan tidak diperlukan untuk lokasi ini.</string>
+    <string name="ad_waiting_consent">Iklan akan dipaparkan selepas semakan privasi selesai.</string>
+</resources>
