@@ -67,6 +67,15 @@
         android:layout_height="1dp"
         android:background="#DCE4DF" />
 
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:visibility="gone" />
+
     <LinearLayout
         android:id="@+id/native_toolbar"
         android:layout_width="match_parent"
@@ -74,43 +83,41 @@
         android:background="#F7F9F6"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/refresh_button"
-            style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/refresh"
-            android:textAllCaps="false"
-            android:textColor="#142132" />
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/refresh"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_refresh"
+            android:tint="#142132" />
 
-        <Button
+        <ImageButton
             android:id="@+id/share_button"
-            style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/share"
-            android:textAllCaps="false"
-            android:textColor="#142132" />
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/share"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_share"
+            android:tint="#142132" />
 
-        <Button
+        <ImageButton
             android:id="@+id/menu_button"
-            style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/menu"
-            android:textAllCaps="false"
-            android:textColor="#142132" />
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_menu"
+            android:tint="#142132" />
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/ad_view_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:visibility="gone" />
 
 </LinearLayout>
