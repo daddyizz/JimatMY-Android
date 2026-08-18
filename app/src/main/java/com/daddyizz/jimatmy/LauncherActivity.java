@@ -53,6 +53,8 @@ public class LauncherActivity extends Activity {
     private static final int MENU_AD_PRIVACY = 2;
     private static final int MENU_OPEN_BROWSER = 3;
     private static final int MENU_ABOUT = 4;
+    private static final int ADMIN_TAP_COUNT_REQUIRED = 10;
+    private static final long ADMIN_TAP_WINDOW_MS = 6000L;
     private static final String INTERNAL_HOST = "jimatmy.lovable.app";
     private static final String HOME_URL = "https://jimatmy.lovable.app/?source=android";
     private static final String PRIVACY_URL = "https://jimatmy.lovable.app/privacy";
@@ -300,12 +302,12 @@ public class LauncherActivity extends Activity {
             }
 
             long now = SystemClock.elapsedRealtime();
-            if (now - adminTapWindowStartedAt > 3500L) {
+            if (now - adminTapWindowStartedAt > ADMIN_TAP_WINDOW_MS) {
                 adminTapCount = 0;
                 adminTapWindowStartedAt = now;
             }
             adminTapCount++;
-            if (adminTapCount >= 5) {
+            if (adminTapCount >= ADMIN_TAP_COUNT_REQUIRED) {
                 adminTapCount = 0;
                 Toast.makeText(this, R.string.opening_admin, Toast.LENGTH_SHORT).show();
                 loadUrl(ADMIN_URL);
